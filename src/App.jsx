@@ -38,7 +38,7 @@ function App() {
     const valor = cantidad - step;
 
     if (valor < min) {
-      alert("Cantidad no valida");
+      alert("Invalid amount");
       return;
     }
 
@@ -49,7 +49,7 @@ function App() {
     const valor = cantidad + step;
 
     if (valor > max) {
-      alert("Cantidad no valida");
+      alert("Invalid amount");
       return;
     }
 
@@ -99,20 +99,20 @@ function App() {
         {/* muestra infomracion del total a pagar y cuanto a pagar por mes */}
         <div className="my-5 space-y-3 bg-gray-50 p-5">
           <h2 className="text-2xl font-extrabold text-gray-500 text-center">
-            Resumen <span className="text-indigo-600">de pagos</span>
+            Payment <span className="text-indigo-600">Summary</span>
           </h2>
 
           <p className="text-xl text-gray-500 text-center font-bold">
-            {meses} Meses
+            {meses} Months
           </p>
           <p className="text-xl text-gray-500 text-center font-bold">
-            {formatearDinero(total)} Total a pagar
+            {formatearDinero(total)} Total to pay
           </p>
           <p className="text-xl text-gray-500 text-center font-bold">
-            {formatearDinero(interesTotal)} de Interés
+            {formatearDinero(interesTotal)} in Interest
           </p>
           <p className="text-xl text-gray-500 text-center font-bold">
-            {formatearDinero(pago)} Mensuales
+            {formatearDinero(pago)} per Month
           </p>
         </div>
       </div>

@@ -17,7 +17,7 @@ export default function Interes({ config, setConfig }) {
   return (
     <div className="my-8">
       <h2 className="text-2xl font-extrabold text-gray-500 text-center">
-        Tipo de <span className="text-indigo-600">Interés</span>:
+        <span className="text-indigo-600">Interest</span> Type:
       </h2>
 
       {/* selector de modo */}
@@ -27,20 +27,20 @@ export default function Interes({ config, setConfig }) {
           className={claseBoton(modo === "automatico")}
           onClick={() => actualizar("modo", "automatico")}
         >
-          Automático
+          Automatic
         </button>
         <button
           type="button"
           className={claseBoton(modo === "personalizado")}
           onClick={() => actualizar("modo", "personalizado")}
         >
-          Personalizado
+          Custom
         </button>
       </div>
 
       {modo === "automatico" ? (
         <p className="mt-4 text-sm text-gray-500 text-center">
-          El interés se calcula según la cantidad solicitada y el plazo elegido.
+          Interest is calculated based on the requested amount and the chosen term.
         </p>
       ) : (
         <div className="mt-5 space-y-4">
@@ -50,7 +50,7 @@ export default function Interes({ config, setConfig }) {
               htmlFor="tasa"
               className="block text-gray-500 text-center font-bold mb-2"
             >
-              Tasa de interés (%)
+              Interest rate (%)
             </label>
             <div className="flex items-center gap-3">
               <input
@@ -82,7 +82,7 @@ export default function Interes({ config, setConfig }) {
               htmlFor="periodo"
               className="block text-gray-500 text-center font-bold mb-2"
             >
-              La tasa es
+              The rate is
             </label>
             <select
               id="periodo"
@@ -90,9 +90,9 @@ export default function Interes({ config, setConfig }) {
               value={periodo}
               onChange={(e) => actualizar("periodo", e.target.value)}
             >
-              <option value="anual">Anual</option>
-              <option value="mensual">Mensual</option>
-              <option value="total">Total (sobre todo el préstamo)</option>
+              <option value="anual">Annual</option>
+              <option value="mensual">Monthly</option>
+              <option value="total">Total (over the whole loan)</option>
             </select>
           </div>
 
@@ -103,7 +103,7 @@ export default function Interes({ config, setConfig }) {
                 htmlFor="metodo"
                 className="block text-gray-500 text-center font-bold mb-2"
               >
-                Método de cálculo
+                Calculation method
               </label>
               <select
                 id="metodo"
@@ -111,8 +111,8 @@ export default function Interes({ config, setConfig }) {
                 value={metodo}
                 onChange={(e) => actualizar("metodo", e.target.value)}
               >
-                <option value="simple">Interés simple</option>
-                <option value="frances">Cuota fija (amortización)</option>
+                <option value="simple">Simple interest</option>
+                <option value="frances">Fixed payment (amortization)</option>
               </select>
             </div>
           )}
