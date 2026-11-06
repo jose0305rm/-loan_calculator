@@ -2,7 +2,7 @@
 
 Calculadora de préstamos hecha con **React + Vite + Tailwind CSS**. Muestra al instante el total a pagar, el interés y la cuota mensual según la cantidad y el plazo elegidos.
 
-**Demo:** https://jose0305rm.github.io/cotizador_prestamos/
+**Demo:** https://jose0305rm.github.io/-loan_calculator/
 
 ## Funcionalidades
 
