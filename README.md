@@ -1,23 +1,23 @@
-# Cotizador de Préstamos
+# Loan Quoter
 
-Calculadora de préstamos hecha con **React + Vite + Tailwind CSS**. Muestra al instante el total a pagar, el interés y la cuota mensual según la cantidad y el plazo elegidos.
+Loan calculator built with **React + Vite + Tailwind CSS**. It instantly shows the total to pay, the interest and the monthly payment for the chosen amount and term.
 
-**Demo:** https://jose0305rm.github.io/-loan_calculator/
+**Live demo:** https://jose0305rm.github.io/-loan_calculator/
 
-## Funcionalidades
+## Features
 
-- Cantidad con slider o botones +/- y selección de plazo.
-- **Interés automático:** la tasa se ajusta según la cantidad y el plazo.
-- **Interés personalizado:** tasa anual, mensual o total, con interés simple o cuota fija (amortización francesa).
+- Choose the amount with a slider or the +/- buttons, and pick the payment term.
+- **Automatic interest:** the rate adjusts to the amount requested and the term.
+- **Custom interest:** annual, monthly or total rate, with simple interest or fixed payments (French amortization).
 
-## Correr localmente
+## Run locally
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Despliegue
+## Deployment
 
-`.github/workflows/deploy.yml` compila y publica en GitHub Pages en cada push a `main`
+`.github/workflows/deploy.yml` builds the app and publishes it to GitHub Pages on every push to `main`
 (Settings → Pages → Source: **GitHub Actions**).
